@@ -1,20 +1,11 @@
 import React from 'react';
 import './App.css';
-import { DetailProps, DetailState} from './types'
+import { DetailProps} from './types'
 
-class Detail extends React.Component<DetailProps, DetailState> {
-    constructor(props:DetailProps){
-        super(props);
-        this.state={
-            numOfPeople: props.classification.numOfPeople,
-        }
-    }
-
+class Detail extends React.Component<DetailProps, {}> {
     onNumOfPeopleChange(e: React.ChangeEvent<HTMLSelectElement>):void{
         const num: number = Number(e.target.value);
-        this.setState({
-            numOfPeople: num,
-        });
+        this.props.onNumOfPeopleChange(num);
     }
 
     render() {

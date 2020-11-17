@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import AdmissionFeeCalculator from './AdmissionFeeCalculator';
-
 import reportWebVitals from './reportWebVitals';
 
 
@@ -13,14 +12,6 @@ const App: React.FC = () => {
     </div>
   );
 }
-
-// const App: React.FC = () => {
-//   return (
-//     <div className="main">
-//       <AdmissionFeeCalculator />
-//     </div>
-//   );
-// }
 
 ReactDOM.render(<App />, document.getElementById('root'));
 // ReactDOM.render(<App />, document.querySelector(".container"));
